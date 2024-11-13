@@ -1,0 +1,120 @@
+version: '3.8'
+
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    environment:
+      - CLUSTER_NAME=etl_cluster
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_namenode_http_address=0.0.0.0:9870
+    ports:
+      - "9870:9870"  
+      - "9000:9000" 
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+      - ./hadoop_conf:/etc/hadoop/conf
+    networks:
+      - etl-network
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    environment:
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_datanode_http_address=0.0.0.0:9864
+      - HDFS_CONF_dfs_datanode_address=0.0.0.0:9866
+    ports:
+      - "9864:9864"
+      - "9866:9866"
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+      - ./hadoop_conf:/etc/hadoop/conf
+    depends_on:
+      - namenode
+    networks:
+      - etl-network
+
+  dremio:
+    image: dremio/dremio-oss:latest
+    container_name: dremio
+    ports:
+      - "9047:9047"  
+    volumes:
+      - dremio_data:/opt/dremio/data
+    environment:
+      - DREMIO_JAVA_OPTS=-Xms4G -Xmx4G
+    networks:
+      - etl-network
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow  
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data:/opt/airflow/data:rw
+    ports:
+      - "5432:5432"
+    networks:
+      - etl-network
+
+  airflow-scheduler:
+    image: apache/airflow:2.6.3
+    container_name: airflow-scheduler
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__FERNET_KEY=QxWp2H44-ERNhExACOCUaS-9vtV5G1Z6NoUg0-p5Bvg=
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data:rw
+    depends_on:
+      - postgres
+    networks:
+      - etl-network
+    command: ["scheduler"]
+
+  airflow-webserver:
+    image: apache/airflow:2.6.3
+    container_name: airflow-webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__FERNET_KEY=QxWp2H44-ERNhExACOCUaS-9vtV5G1Z6NoUg0-p5Bvg=
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__WEBSERVER__RBAC=True
+    ports:
+      - "8080:8080"  
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data:rw
+    depends_on:
+      - airflow-scheduler
+    networks:
+      - etl-network
+    command: ["webserver"]
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  dremio_data:
+  postgres_data:
+  airflow_logs:
+  airflow_dags:
+  airflow_plugins:
+  airflow_data:
+
+networks:
+  etl-network:
+    driver: bridge
+    name: etl-network 

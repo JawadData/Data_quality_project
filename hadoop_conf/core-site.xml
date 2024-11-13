@@ -1,0 +1,26 @@
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>s3a://raw-data</value>
+    </property>
+    <property>
+        <name>fs.s3a.access.key</name>
+        <value>Xtb7J14EviiX5gcvWbb7</value>
+    </property>
+    <property>
+        <name>fs.s3a.secret.key</name>
+        <value>J2BvF8nDxysfWq8u20jemzK9fJRkGsO6LowCdYJZ</value>
+    </property>
+    <property>
+        <name>fs.s3a.endpoint</name>
+        <value>http://localhost:9000</value>
+    </property>
+    <property>
+        <name>fs.s3a.path.style.access</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>fs.s3a.aws.credentials.provider</name>
+        <value>org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider</value>
+    </property>
+</configuration>
