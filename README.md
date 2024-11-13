@@ -1,8 +1,9 @@
 # 🚀 Data Pipeline Architecture for Data Quality and Storytelling  
 
-This project, completed during my internship at Wafa Assurance, aims to test data quality and provide impactful visualizations through "data storytelling".
-Due to the sensitivity of the actual data, a "dummy dataset" was used, although it is much smaller than the production data. As a result, transformations were performed using "Python" and "Pandas" instead of "PySpark", while still maintaining the key steps of the data pipeline.
+This project, completed during my internship at Wafa Assurance Morocco, aims to test data quality and provide impactful visualizations through *data storytelling*.  
+Due to the sensitivity of the actual data, a *dummy dataset* was used, although it is much smaller than the production data. As a result, transformations were performed using **Python** and **Pandas** instead of **PySpark**, while still maintaining the key steps of the data pipeline.
 ---
+
 
 ## 🏗️ Architecture Overview  
 
@@ -38,7 +39,10 @@ Due to the sensitivity of the actual data, a "dummy dataset" was used, although 
 
 7. **Power BI**  
    - Visualization and storytelling tool.  
-   - Creates interactive dashboards and **data stories** that transform raw numbers into meaningful narratives.
+   - Creates interactive dashboards and **data stories** that transform raw numbers into meaningful narratives.  
+   - Designed for two types of users:  
+     - **Data Owner**.  
+     - **Data Steward**.
 
 ---
 
@@ -72,6 +76,19 @@ This pipeline enables businesses to:
 - **Deployment**: Docker  
 
 ---
+
+## 📊 Data Visualizations  
+
+Below are some examples of the visualizations created using Power BI to present the insights derived from the processed data:
+
+- **Dashboard 1**: Overview of key data trends and performance indicators.
+  ![Dashboard 1](dashboard1.png)
+
+- **Dashboard 2**: Detailed analysis of customer behavior and sales patterns.
+  ![Dashboard 2](dashboard2.png)
+
+- **Data Story**: An interactive storytelling visualization that highlights critical data insights.
+  ![Data Story](datastory.png)
 
 ## 💡 Conclusion  
 
