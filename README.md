@@ -1,9 +1,10 @@
 # 🚀 Data Pipeline Architecture for Data Quality and Storytelling  
 
-This project, completed during my internship at Wafa Assurance Morocco, aims to test data quality and provide impactful visualizations through *data storytelling*.  
-Due to the sensitivity of the actual data, a *dummy dataset* was used, although it is much smaller than the production data. As a result, transformations were performed using **Python** and **Pandas** instead of **PySpark**, while still maintaining the key steps of the data pipeline.
----
+This project, a simulation completed during my internship at Wafa Assurance Morocco, was designed to test data quality and deliver impactful visualizations through data storytelling. While the project is based on a real-world scenario, only a few adjustments were made for the purpose of this simulation.
+A dummy dataset was used due to the sensitivity of the actual data, with the dummy dataset being significantly smaller than the production data. In this simulation, I used HDFS as the data source. However, in the actual project, multiple data sources were involved, including HDFS, SQL Server, Oracle DB, and more.
+Data transformations were performed using Python and Pandas, rather than PySpark, while still adhering to the core steps of the data pipeline.
 
+---
 
 ## 🏗️ Architecture Overview  
 
