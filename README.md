@@ -47,24 +47,22 @@ Data transformations were performed using Python and Pandas, rather than PySpark
 
 ---
 
-## 🔍 Why Focus on Data Quality?  
+## 🧪 Data Quality Tests
 
-In this data-driven world, **quality is everything**. Poor data quality leads to misleading insights, while high-quality data enables:  
+As part of the project, I performed several data quality tests across different dimensions, including **completeness**, **validity**, **coherence**, and **uniqueness**. For each dimension, I ran multiple tests on different types of data such as *names*, *first names*, and more. Here are the key tests conducted:
 
-- **Accurate Decision Making**: Ensure stakeholders have reliable insights.  
-- **Operational Efficiency**: Reduce rework and manual cleaning efforts.  
-- **Enhanced Trust**: Build confidence in data-driven strategies across teams.  
+### 1. Completeness
+Ensuring that all required fields were populated, with no missing or null values.
 
-Our pipeline systematically validates data quality at each stage, ensuring only the most reliable data makes its way to the final layer.
+### 2. Validity
+Verifying that the data follows predefined rules, such as valid date formats or correct ranges for numerical values.
 
----
+### 3. Coherence
+Checking for logical consistency within the data, such as ensuring that relationships between different fields (e.g., first name and last name) made sense.
 
-## 🎯 Use Case: From Raw Data to Data Storytelling  
+### 4. Uniqueness
 
-This pipeline enables businesses to:  
-- Validate and improve the quality of data.  
-- Gain insights from clean, enriched datasets.  
-- Present these insights through **data storytelling**, allowing stakeholders to better understand trends, patterns, and actionable insights.  
+These tests helped identify and correct potential data quality issues, ensuring that the datasets were reliable for analysis and visualization.
 
 ---
 
