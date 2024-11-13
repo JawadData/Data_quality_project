@@ -82,7 +82,7 @@ This pipeline enables businesses to:
 Below are some examples of the visualizations created using Power BI to present the insights derived from the processed data:
 
 - **Dashboard 1**: Overview of key data trends and performance indicators.
-  ![Dashboard 1](dashboard1.png)
+  ![Dashboard 1](1.jpg)
 
 - **Dashboard 2**: Detailed analysis of customer behavior and sales patterns.
   ![Dashboard 2](dashboard2.png)
