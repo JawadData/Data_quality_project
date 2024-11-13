@@ -1,7 +1,7 @@
 # 🚀 Data Pipeline Architecture for Data Quality and Storytelling  
 
-Welcome to our innovative data pipeline project! This architecture is dedicated to **testing data quality** and transforming insights into compelling **data storytelling visualizations**. Here's an overview of the project and its core components:
-
+This project, completed during my internship at Wafa Assurance, aims to test data quality and provide impactful visualizations through "data storytelling".
+Due to the sensitivity of the actual data, a "dummy dataset" was used, although it is much smaller than the production data. As a result, transformations were performed using "Python" and "Pandas" instead of "PySpark", while still maintaining the key steps of the data pipeline.
 ---
 
 ## 🏗️ Architecture Overview  
