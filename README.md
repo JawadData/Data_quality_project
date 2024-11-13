@@ -81,26 +81,27 @@ This pipeline enables businesses to:
 
 Below are some examples of the visualizations created using Power BI to present the insights derived from the processed data:
 
-- **Dashboard 1**: Interaction-based Visualization for Data Owners and Data Stewards  
-  ![Dashboard 1](dashboards/1.jpg)
+## **Dashboard 1**: Interaction-based Visualization for Data Owners and Data Stewards  
+![Dashboard 1](dashboards/1.jpg){:width="50%"}
 
-- **Dashboard 2**: Global Insights on Data Quality  
-  ![Dashboard 2](dashboards/2.jpg)
+## **Dashboard 2**: Global Insights on Data Quality  
+![Dashboard 2](dashboards/2.jpg){:width="50%"}
 
-- **Dashboard 3**: Data Quality Insights by Uniqueness Dimension  
-  ![Dashboard 3](dashboards/3.jpg)
+## **Dashboard 3**: Data Quality Insights by Uniqueness Dimension  
+![Dashboard 3](dashboards/3.jpg){:width="50%"}
 
-- **Dashboard 4**: Data Quality Insights by Completeness Dimension  
-  ![Dashboard 4](dashboards/4.jpg)
+## **Dashboard 4**: Data Quality Insights by Completeness Dimension  
+![Dashboard 4](dashboards/4.jpg){:width="50%"}
 
-- **Dashboard 5**: Data Quality Insights by Validity Dimension  
-  ![Dashboard 5](dashboards/5.jpg)
+## **Dashboard 5**: Data Quality Insights by Validity Dimension  
+![Dashboard 5](dashboards/5.jpg){:width="50%"}
 
-- **Dashboard 6**: Data Quality Insights by Consistency Dimension  
-  ![Dashboard 6](dashboards/6.jpg)
+## **Dashboard 6**: Data Quality Insights by Consistency Dimension  
+![Dashboard 6](dashboards/6.jpg){:width="50%"}
 
-- **Dashboard 7**: Deep and Detailed Data Quality Insights  
-  ![Dashboard 7](dashboards/7.jpg)
+## **Dashboard 7**: Deep and Detailed Data Quality Insights  
+![Dashboard 7](dashboards/7.jpg){:width="50%"}
+
 
   
 ## 💡 Conclusion  
