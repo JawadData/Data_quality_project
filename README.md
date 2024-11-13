@@ -81,15 +81,28 @@ This pipeline enables businesses to:
 
 Below are some examples of the visualizations created using Power BI to present the insights derived from the processed data:
 
-- **Dashboard 1**: Overview of key data trends and performance indicators.
-  ![Dashboard 1](dashbords/1.jpg)
+- **Dashboard 1**: Interaction-based Visualization for Data Owners and Data Stewards  
+  ![Dashboard 1](dashboards/1.jpg)
 
-- **Dashboard 2**: Detailed analysis of customer behavior and sales patterns.
-  ![Dashboard 2](dashboard2.png)
+- **Dashboard 2**: Global Insights on Data Quality  
+  ![Dashboard 2](dashboards/2.jpg)
 
-- **Data Story**: An interactive storytelling visualization that highlights critical data insights.
-  ![Data Story](datastory.png)
+- **Dashboard 3**: Data Quality Insights by Uniqueness Dimension  
+  ![Dashboard 3](dashboards/3.jpg)
 
+- **Dashboard 4**: Data Quality Insights by Completeness Dimension  
+  ![Dashboard 4](dashboards/4.jpg)
+
+- **Dashboard 5**: Data Quality Insights by Validity Dimension  
+  ![Dashboard 5](dashboards/5.jpg)
+
+- **Dashboard 6**: Data Quality Insights by Consistency Dimension  
+  ![Dashboard 6](dashboards/6.jpg)
+
+- **Dashboard 7**: Deep and Detailed Data Quality Insights  
+  ![Dashboard 7](dashboards/7.jpg)
+
+  
 ## 💡 Conclusion  
 
 This architecture isn't just about moving data—it's about **telling stories**. From ensuring data quality to crafting visually engaging narratives, this pipeline empowers organizations to leverage their data effectively and make impactful decisions.
