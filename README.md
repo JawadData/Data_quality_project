@@ -78,7 +78,7 @@ These tests helped identify and correct potential data quality issues, ensuring 
 
 ## 📈 Dashboard Overview  
 ### 📍 Visualization:  
-![Alt Text](templates/wafa.jpg)
+![Alt Text](dashboards/2.jpg)
 
 ## 🌐 How to Access  
 You can view the live dashboard using the link below:  
