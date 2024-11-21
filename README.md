@@ -76,29 +76,14 @@ These tests helped identify and correct potential data quality issues, ensuring 
 
 ---
 
-## 📊 Data Visualizations  
+## 📈 Dashboard Overview  
+### 📍 Visualization:  
+![Alt Text](templates/wafa.jpg)
 
-Below are some examples of the visualizations created using Power BI to present the insights derived from the processed data:
+## 🌐 How to Access  
+You can view the live dashboard using the link below:  
+👉 **[View the Dashboard](https://app.powerbi.com/reportEmbed?reportId=25549b4c-a936-4d2f-8b7e-af85599c0929&autoAuth=true&ctid=04d6a2f0-64b2-4e71-b348-646401d08ee8)**  
 
-## **Dashboard 1**: Interaction-based Visualization for Data Owners and Data Stewards  
-![Dashboard 1](dashboards/1.jpg)
-
-## **Dashboard 2**: Global Insights on Data Quality  
-![Dashboard 2](dashboards/2.jpg)
-
-## **Dashboard 3**: Data Quality Insights by Uniqueness Dimension  
-![Dashboard 3](dashboards/3.jpg)
-
-## **Dashboard 4**: Data Quality Insights by Completeness Dimension  
-![Dashboard 4](dashboards/4.jpg)
-
-## **Dashboard 5**: Data Quality Insights by Validity Dimension  
-![Dashboard 5](dashboards/5.jpg)
-
-## **Dashboard 6**: Data Quality Insights by Consistency Dimension  
-![Dashboard 6](dashboards/6.jpg)
-## **Dashboard 7**: Deep and Detailed Data Quality Insights  
-![Dashboard 7](dashboards/7.jpg)
 
 
   
