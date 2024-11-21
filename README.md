@@ -8,7 +8,7 @@ Data transformations were performed using Python and Pandas, rather than PySpark
 
 ## 🏗️ Architecture Overview  
 
-![Project Architecture](archi.png)  
+![Project Architecture](dashboards/archi.png)  
 
 ### Key Components and Workflow  
 
