@@ -82,7 +82,7 @@ These tests helped identify and correct potential data quality issues, ensuring 
 
 ## 🌐 How to Access  
 You can view the live dashboard using the link below:  
-👉 **[View the Dashboard](https://app.powerbi.com/reportEmbed?reportId=25549b4c-a936-4d2f-8b7e-af85599c0929&autoAuth=true&ctid=04d6a2f0-64b2-4e71-b348-646401d08ee8)**  
+👉 **[View the Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjI3ODA3M2YtYzNlYy00OTEzLWIwMjItMjgxZDk3MTQ4MDJmIiwidCI6ImMyNzg3OTIyLTExZDktNGNhOC1hYWRmLTVlZjdmZjMxYTEyNyJ9)**  
 
 
 
